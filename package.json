@@ -1,9 +1,11 @@
 {
   "name": "now-ui-kit-react",
+  "homepage": "https://ingreyeslara.github.io/reyes_examen_parcial1",
   "version": "1.5.2",
   "private": true,
   "dependencies": {
     "ajv": "^8.17.1",
+    "gh-pages": "^6.1.1",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
     "react": ">=16.8.0",
@@ -17,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
