@@ -1,5 +1,6 @@
 {
   "name": "now-ui-kit-react",
+  "homepage": "https://yahirhernandez03.github.io/hernandez_recuperacion",
   "version": "1.5.2",
   "private": true,
   "dependencies": {
@@ -21,6 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
     "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed"
